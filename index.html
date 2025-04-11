@@ -3,65 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Arpit Mahtele - Personal Website</title>
+    <link rel="stylesheet" href="stylu.css">
 </head>
 <body>
 
-    <h1>Welcome to My Personal Website</h1>
+    <header>
+        <h1>Arpit Mahtele</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#cv">CV</a>
+        </nav>
+    </header>
 
-    <h2>About Me</h2>
-    <p>Hello! I am Arpit Mahtele, a passionate student interested in technology, coding, and continuous learning. This website showcases my background, skills, and achievements.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <p>Hello! I am Arpit Mahtele, a passionate student interested in technology, coding, and continuous learning.</p>
+        </div>
+    </section>
 
-    <h2>My Profile Picture</h2>
-    <img src="images/profile.jpg" alt="Profile Picture" width="200">
+    <section id="photos">
+        <h2>My Birthplace: Mumbai</h2>
+        <div class="photos">
+            <img src="images/place1.jpg" alt="Place 1">
+            <img src="images/place2.jpg" alt="Place 2">
+        </div>
+    </section>
 
-    <h2>My Birthplace Pictures</h2>
-    <img src="images/place1.jpg" alt="Birthplace Image 1" width="300">
-    <img src="images/place2.jpg" alt="Birthplace Image 2" width="300">
+    <section id="education">
+        <h2>Education Background</h2>
+        <div class="card">
+            <ul>
+                <li>School: Atomic Energy Central School - 5</li>
+                <li>College: International Institute of Information Technology Hyderabad</li>
+                <li>Degree: B.Tech in Computer Science and Engineering</li>
+                <li>Achievements:
+                    <ul>
+                        <li>10th CBSE - 96%</li>
+                        <li>12th Maharashtra Board - 93%</li>
+                        <li>JEE Mains AIR 1248</li>
+                        <li>JEE Advanced AIR 7695</li>
+                        <li>Participated in various coding competitions and hackathons</li>
+                        <li>Contributed to open-source projects on GitHub</li>
+                        <li>Worked on personal projects, including a web application and an IoT device</li>
+                        <li>Developed a strong foundation in programming languages and software development methodologies</li>
+                        <li>Completed various online courses in data structures, algorithms, and web development</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-    <h2>Education Background</h2>
-    <ul>
-        <li>School: Atomic Energy Central School - 5</li>
-        <li>College: International Institute of Information Technology Hyderabad</li>
-        <li>Degree: B.Tech in Computer Science and Engineering</li>
-        <li>Achievements:</li>
-        <ul>
-            <li>Completed 10th grade with a score of 96% in CBSE Board</li>
-            <li>Completed 12th grade with a score of 93% in Maharashtra State Board</li>
-            <li>AIR 1248 in JEE Mains 2024</li>
-            <li>AIR 7695 in JEE Advanced 2024</li>
-            <li>Participated in various coding competitions and hackathons</li>
-            <li>Contributed to open-source projects on GitHub</li>
-            <li>Worked on personal projects, including a web application and an IoT device</li>
-            <li>Developed a strong foundation in programming languages and software development methodologies</li>
-        </ul>
-    </ul>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="card">
+            <ul>
+                <li>C, C++, Python, Java</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Web Development</li>
+                <li>Machine Learning</li>
+                <li>Git, Linux, SQL</li>
+                <li>Arduino, IoT Projects</li>
+            </ul>
+        </div>
+    </section>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>C Programming - Intermediate</li>
-        <li>C++ Programming - Intermediate</li>
-        <li>Python - Beginner</li>
-        <li>Java - Beginner</li>
-        <li>JavaScript - Beginner</li>
-        <li>Data Structures and Algorithms - Intermediate</li>
-        <li>HTML, CSS - Intermediate</li>
-        <li>Web Development - Beginner</li>
-        <li>Machine Learning - Beginner</li>
-        <li>Arduino, IoT Projects - Beginner</li>
-        <li>Git and GitHub - Intermediate</li>
-        <li>Linux - Intermediate</li>
-        <li>Competitive Programming - Intermediate</li>
-        <li>Problem Solving - Intermediate</li>
-        <li>Open Source Contribution - Beginner</li>
-        <li>SQL - Intermediate</li>
-        <li>Database Management - Intermediate</li>
-        <li>Networking - Beginner</li>
-    </ul>
+    <section id="cv">
+        <h2>Download My CV</h2>
+        <div class="center">
+            <a class="btn" href="cv/My_CV.pdf" target="_blank" download>Download CV</a>
+        </div>
+    </section>    
 
-    <h2>Download My CV</h2>
-    <a href="cv/My_CV.pdf" target="_blank" download>Click here to download my CV</a>
+    <footer>
+        <p>© 2025 Arpit Mahtele | Made with ❤️</p>
+    </footer>
 
 </body>
 </html>
