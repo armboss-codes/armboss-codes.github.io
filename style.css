@@ -1,12 +1,12 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #FAFAFA;  /* Soft Gray White */
+    background-color: #FAFAFA;
     color: #2c2c2c;
 }
 
 header {
-    background-color: #3E0E63;  /* Rich Royal Purple */
+    background-color: #3E0E63;
     color: white;
     padding: 15px;
     text-align: center;
@@ -24,15 +24,12 @@ nav a:hover {
 }
 
 h1 {
-    background: linear-gradient(90deg, #D8B4FE, #F472B6);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ee75b3;
     text-align: center;
 }
 
 h2 {
-    color: #5C2A9D;  /* Dark Violet */
+    color: #5C2A9D;
     text-align: center;
 }
 
@@ -73,7 +70,7 @@ ul {
 
 .btn {
     display: inline-block;
-    background: linear-gradient(45deg, #8E2DE2, #4A00E0); /* Violet to Purple Gradient */
+    background: linear-gradient(45deg, #8E2DE2, #4A00E0);
     color: white;
     padding: 12px 30px;
     border-radius: 50px;
@@ -85,13 +82,13 @@ ul {
 }
 
 .btn:hover {
-    background: linear-gradient(45deg, #4A00E0, #8E2DE2);  /* Reverse Gradient */
+    background: linear-gradient(45deg, #4A00E0, #8E2DE2);
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 footer {
-    background-color: #3E0E63;  /* Rich Royal Purple */
+    background-color: #3E0E63;
     color: white;
     text-align: center;
     padding: 15px;
