@@ -1,7 +1,6 @@
 function analyzeText() {
     const text = document.getElementById("inputText").value;
 
-    // Basic counts
     const letters = (text.match(/[a-zA-Z]/g) || []).length;
     const words = (text.match(/\b\w+\b/g) || []).length;
     const spaceCount = (text.match(/ /g) || []).length;
@@ -9,10 +8,8 @@ function analyzeText() {
     const tabCount = (text.match(/\t/g) || []).length;
     const special = (text.match(/[^a-zA-Z0-9\s]/g) || []).length;
 
-    // Whitespace count (spaces + newlines + tabs as 4 spaces)
     const totalWhitespace = spaceCount + newlineCount + (tabCount * 4);
 
-    // Tokenization and group counts
     const pronouns = ['i','you','he','she','it','we','they','me','him','her','us','them','my','your','his','their','our','its'];
     const prepositions = ['in','on','at','by','for','with','about','against','between','into','through','during','before','after','above','below','to','from','up','down','over','under'];
     const articles = ['a','an'];
