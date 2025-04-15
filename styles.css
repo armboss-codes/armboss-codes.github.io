@@ -53,6 +53,7 @@ section {
 }
 
 .card:hover {
+    transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(199, 54, 235, 0.6);
 }
 
