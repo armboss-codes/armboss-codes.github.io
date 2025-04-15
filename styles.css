@@ -109,8 +109,8 @@ img {
 .image-card {
   flex: 0 0 auto;
   scroll-snap-align: center;
-  width: 600px;      /* increased from 500px */
-  height: 380px;     /* increased from 320px */
+  width: 600px;
+  height: 380px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
