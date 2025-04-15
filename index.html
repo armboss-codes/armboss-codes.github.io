@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arpit Mahtele - Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scrpit2.js"></script>
+    <script src="script3.js"></script>
 </head>
+
 <body>
 
     <header>
@@ -20,11 +25,16 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="card">
+        <div class="card hacker-card">
             <img src="images/profile.jpg" alt="Profile Picture">
-            <p>Hello! I am Arpit Mahtele, a passionate student interested in technology, coding, and continuous learning.</p>
+            <ul>
+                <li>Hey there! I'm Arpit Mahtele — a computer science student at IIIT-H, coding enthusiast, and a guy who probably loves sleep more than bugs in his code.</li>
+                <li>I'm also part of the The Gaming Club at IIIT-H, where I get to blend my love for building with teamwork and impact. I also love exploring new places and cultures, which inspires my creativity and problem-solving skills.</li>
+                <li>When I'm not doing projects & assignments or diving into C++ and Python, you'll find me outdoors playing literally any sport, or indoors crushing it in games and bingeing movies.</li>
+            </ul>
+            <p class="terminal-quote" align="center">Whether it's solving DSA problems or debugging life with a nap, I'm all in!</p>
         </div>
-    </section>
+    </section>    
 
     <section id="photos">
         <h2>My Birthplace: Mumbai</h2>
@@ -34,51 +44,97 @@
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education Background</h2>
-        <div class="card">
-            <ul>
-                <li>School: Atomic Energy Central School - 5</li>
-                <li>College: International Institute of Information Technology Hyderabad</li>
-                <li>Degree: B.Tech in Computer Science and Engineering</li>
-                <li>Achievements:
-                    <ul>
-                        <li>10th CBSE - 96%</li>
-                        <li>12th Maharashtra Board - 93%</li>
-                        <li>JEE Mains AIR 1248</li>
-                        <li>JEE Advanced AIR 7695</li>
-                        <li>Participated in various coding competitions and hackathons</li>
-                        <li>Contributed to open-source projects on GitHub</li>
-                        <li>Worked on personal projects, including a web application and an IoT device</li>
-                        <li>Developed a strong foundation in programming languages and software development methodologies</li>
-                        <li>Completed various online courses in data structures, algorithms, and web development</li>
-                    </ul>
-                </li>
-            </ul>
+    <section id="educationn">
+        <h2>Education</h2>
+        <div class="edu-container">
+            <div class="edu-card">
+                <h3 align="center">A.E.C.S - 5</h3>
+                <img src="images/school.jpg" alt="Atomic Energy Central School - 5">
+                <p>1st-10th</p>
+                <p>2012-2022</p>
+            </div>
+            <div class="edu-card">
+                <h3 align="center">Pace Junior Science College</h3>
+                <img src="images/college.jpg" alt="Pace Junior Science College">
+                <p>11th-12th</p>
+                <p>Science Stream</p>
+                <p>2022-2024</p>
+            </div>
+            <div class="edu-card">
+                <h3 align="center">IIIT Hyderabad</h3>
+                <img src="images/iiit.jpg" alt="IIIT Hyderabad">
+                <p>B.Tech in Computer Science</p>
+                <p>2024 – Now</p>
+                <p>CGPA: 7/10</p>
+            </div>
         </div>
     </section>
+      
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <ul class="achievements-list">
+            <li>10th CBSE - 96%</li>
+            <li>12th Maharashtra Board - 93%</li>
+            <li>JEE Mains AIR 1248</li>
+            <li>JEE Advanced AIR 7695</li>
+            <li>Participated in various coding contests and hackathons</li>
+            <li>Developed a strong foundation in programming languages and software development methodologies</li>
+            <li>Completed various online courses in data structures, algorithms, and web development</li>
+        </ul>
+    </section>      
 
     <section id="skills">
         <h2>Technical Skills</h2>
         <div class="card">
+            <h3>Proficient</h3>
             <ul>
-                <li>C, C++, Python, Java</li>
-                <li>HTML, CSS, JavaScript</li>
+                <li>C, C++</li>
+                <li>Python</li>
                 <li>Data Structures & Algorithms</li>
+                <li>Git, Linux</li>
+            </ul>
+            <h3>Intermediate</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>SQL</li>
                 <li>Web Development</li>
-                <li>Machine Learning</li>
-                <li>Git, Linux, SQL</li>
                 <li>Arduino, IoT Projects</li>
+            </ul>
+            <h3>Beginner</h3>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Java</li>
             </ul>
         </div>
     </section>
+
+    <section id="text-analyzer">
+        <h2>Text Analyzer</h2>
+        <div class="card">
+            <textarea id="inputText" rows="15" cols="100" placeholder="Paste your text here..."></textarea>
+            <br><br>
+            <button onclick="analyzeText()" class="btn">Process Text</button>
+            <button onclick="clearText()" class="btn" style="margin-left: 10px; background: #B00020;">Clear</button>
+
+            <div id="analysisOutput" style="margin-top: 20px;"></div>
+        </div>
+    </section>    
 
     <section id="cv">
         <h2>Download My CV</h2>
         <div class="center">
             <a class="btn" href="cv/My_CV.pdf" target="_blank" download>Download CV</a>
         </div>
-    </section>    
+    </section>
+
+    <section id="social">
+        <h2>Connect with Me</h2>
+        <div class="social-icons">
+            <a href="https://github.com/arpitmahtele" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/arpitmahtele" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:arpit@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
 
     <footer>
         <p>© 2025 Arpit Mahtele | Made with ❤️</p>

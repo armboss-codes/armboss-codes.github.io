@@ -1,0 +1,200 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    size: 120%;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #1F1B24;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #BB86FC;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #03DAC6;
+}
+
+h1 {
+    color: #BB86FC;
+    text-align: center;
+}
+
+h2 {
+    color: #03DAC6;
+    text-align: center;
+    size: 150%;
+}
+
+section {
+    padding: 30px;
+}
+
+.card {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hacker-card {
+    background-color: #0d0d0d !important;
+    color: #00ff00;
+    font-family: 'JetBrains Mono', monospace;
+    /* box-shadow: 0 0 15px #00ff00; */
+}
+
+.hacker-card ul {
+    list-style-type: '➤ ';
+    padding-left: 20px;
+    color: #00ff00;
+}
+
+.terminal-quote {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #00ff00;
+    text-shadow: 0 0 4px #00ff00;
+}
+
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.edu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.edu-card {
+  background: #1E1E1E;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  padding: 24px 32px;
+  min-width: 260px;
+  max-width: 340px;
+  flex: 1 1 260px;
+  margin: 0 8px;
+  transition: transform 0.2s;
+}
+
+.edu-card h3 {
+  color: #BB86FC;
+  margin-bottom: 8px;
+}
+
+.edu-card p {
+  margin: 4px 0;
+  color: #e0e0e0;
+}
+
+#achievements {
+  margin-top: 40px;
+}
+
+.achievements-list {
+  background: #1E1E1E;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  padding: 24px 32px;
+  max-width: 700px;
+  margin: 24px auto 0 auto;
+  list-style: disc inside;
+}
+
+.achievements-list li {
+  margin-bottom: 12px;
+  color: #eefaf9;
+  font-size: 1.1em;
+}
+
+@media (max-width: 700px) {
+  .edu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .edu-card {
+    max-width: 95%;
+    min-width: unset;
+    margin: 12px 0;
+  }
+  .achievements-list {
+    padding: 18px 10px;
+  }
+}
+
+ul {
+    line-height: 1.8;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #3700B3, #BB86FC);
+    color: white;
+    padding: 22px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #BB86FC, #3700B3);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #1F1B24;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #BB86FC;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #03DAC6;
+}
